@@ -6,8 +6,11 @@ if(xhr.readyState===4 && xhr.status === 200){
 }
 
 }
+
 xhr.open('GET','msg.txt',true); //Request Type,File Location,whether is or isn't asynchronous
 xhr.send(); // Sending to server
+
+ 
 
 
 /*

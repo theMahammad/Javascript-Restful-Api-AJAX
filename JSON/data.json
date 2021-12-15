@@ -1,0 +1,14 @@
+[  
+    {
+    "firstName":"Mehemmed","lastName" : "Sadigzada","age" : 20,"retired" : false
+    },
+    {
+    "firstName":"Naghi","lastName" : "Aliyev","age" : 29,"retired" : false
+    },
+    {
+    "firstName":"Samir","lastName" : "Karimov","age" : 70,"retired" : true
+    }   
+]
+    
+
+
