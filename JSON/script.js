@@ -38,8 +38,5 @@
 }
     );
 
-    function loadEmployees(){
-        
-    }
-    
+
     

@@ -1,5 +1,8 @@
 document.querySelector("#getOne").addEventListener('click',getOne);
 document.querySelector("#getAll").addEventListener('click',getAll);
+document.querySelector("#post").addEventListener('click',post);
+
+
 
 function getOne(){
     
@@ -73,4 +76,26 @@ function getAll(){
         }
     }
     xhr.send();
+}
+
+function post(){
+  const data = {
+
+    userId : 1,
+    title : "I'm a title",
+    body : "I'm a body"
+  }
+  var json = JSON.stringify(data);
+  
+  const xhr = new XMLHttpRequest();
+  var url = "https://jsonplaceholder.typicode.com/posts"
+  xhr.open('POST',url,true);
+  xhr.setRequestHeader('Content-type','application/json; charset = utf-8');
+  xhr.onload= function(){
+    if(this.status === 201 && this.readyState === 4 ){ //201 means creating data
+      console.log('Data have been sent!\n',this.responseText)
+    }
+  }
+  xhr.send(json);
+
 }
